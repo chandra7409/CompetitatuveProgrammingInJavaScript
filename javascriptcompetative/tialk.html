@@ -1,0 +1,55 @@
+<!--   program for a simple calculator -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        .cal {
+            background: black;
+            color: white;
+            border: 4px solid blue;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <div class="cal">
+            <h1><b>Create  calculator by tilak </b></h1>
+
+        </div>
+        <script>
+            let Opr = prompt('Enter Opr ( either +, -, * or / ): ');
+            let n1 = parseFloat(prompt('Enter first number: '));
+            let n2 = parseFloat(prompt('Enter second number: '));
+
+            let result;
+            if (Opr == '+') {
+                result = n1 + n2;
+            } else if (Opr == '-') {
+                result = n1 - n2;
+            } else if (Opr == '*') {
+                result = n1 * n2;
+            } else {
+                result = n1 / n;
+            }
+
+            document.write(`${n1} ${Opr} ${n2} = ${result}`);
+        </script>
+    </center>
+</body>
+
+</html>

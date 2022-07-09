@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function CheckString(str) {
+            let n = String.length;
+            for (let i = 0; i < n / 2; i++) {
+                if (string[[i] !== string[n - 1 - i]]) {
+                    return 'it is a palindrome';
+                }
+
+            }
+            return 'it is a not palindrome';
+
+        }
+        const string = prompt('Enter the string:');
+        const value = CheckString(string);
+        document.write(value);
+    </script>
+</body>
+
+</html>

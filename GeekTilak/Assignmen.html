@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        function calculator(no1, no2, operation) {
+            let operator;
+            switch (operator) {
+                case '+':
+                    return no1 + no2;
+                    break;
+                case '-':
+                    return no1 - no2;
+                    break;
+                case '*':
+                    return no1 * no2;
+                    break;
+                case '/':
+                    return no1 / no2;
+                    break;
+                default:
+                    return ('enter the invalid ')
+
+            }
+        }
+        let sol1 = calculator(4, 5, "+") // 9
+        let sol2 = calculator(3867, 9347, "+") // 13214
+        let sol3 = calculator(9, 3, "/") // 3
+        let sol4 = calculator(3, 9, "/") // 0.33  to roundOff fractional part use .toFixed(2) 
+        let sol5 = calculator(56, 89, "*") // 4984
+        let sol6 = calculator(-5, 5, "-") // -10
+        let sol7 = calculator(56, 89, "-") // -33 -->
+
+        document.write(sol1);
+        document.write(sol2);
+        document.write(sol3);
+        document.write(sol4);
+        document.write(sol5);
+        document.write(sol6);
+
+        document.write(sol7);
+    </script>
+</body>
+
+</html>
